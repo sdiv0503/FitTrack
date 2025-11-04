@@ -1,7 +1,5 @@
 # FitTrack - AI-Powered Fitness Coaching Platform
 
-![FitTrack Banner]()
-
 ## 🏋️ Project Overview
 
 FitTrack is a full-stack web application that democratizes access to personalized fitness coaching through AI-powered features. Built as my internship project, it combines modern web technologies with machine learning to provide intelligent workout planning, real-time form correction, and predictive progress analytics.
@@ -91,24 +89,43 @@ http://localhost:3000
 ## 📁 Project Structure
 
 fittrack/
+
 ├── src/
+
 │ ├── app/ # Next.js app directory
+
 │ │ ├── (auth)/ # Authentication pages
+
 │ │ ├── (dashboard)/ # Dashboard pages
+
 │ │ ├── api/ # API routes
+
 │ │ └── layout.tsx # Root layout
+
 │ ├── processes/ # Multi-feature workflows
+
 │ ├── widgets/ # Composite UI components
+
 │ ├── features/ # Business features
+
 │ ├── entities/ # Domain objects
+
 │ └── shared/ # Reusable utilities
+
 ├── prisma/
+
 │ ├── schema.prisma # Database schema
+
 │ └── migrations/ # Migration history
+
 ├── public/ # Static assets
+
 ├── docker-compose.yml # Docker configuration
+
 ├── package.json # Dependencies
+
 └── README.md # This file
+
 
 ## 📊 Performance Metrics
 
@@ -133,20 +150,34 @@ fittrack/
 ## 📈 Database Schema
 
 model User {
+
 id String @id @default(cuid())
+
 email String @unique
+
 workouts Workout[]
+
 workoutLogs WorkoutLog[]
+
 subscription Subscription?
+
 }
 
+
 model Exercise {
+
 id String @id @default(cuid())
+
 name String @unique
+
 muscleGroups String[]
+
 difficulty Int
+
 instructions String
+
 }
+
 
 // ... see prisma/schema.prisma for full schema
 
@@ -167,17 +198,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Your Name**
-- Portfolio: [yourwebsite.com](https://yourwebsite.com)
 - LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
 - GitHub: [@yourusername](https://github.com/yourusername)
 - Email: your.email@example.com
-
-## 🙏 Acknowledgments
-
-- Built as part of my internship at [Company Name]
-- Special thanks to my mentor [Mentor Name]
-- Exercise data sourced from [Source]
-- Inspired by [Inspiration]
----
 
 **⭐ If you found this project helpful, please consider giving it a star!**
