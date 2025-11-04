@@ -22,7 +22,7 @@ export function BottomNavigation() {
       mobileLabel: t("bottom_navigation.workouts"),
       href: paths.root,
       icon: Dumbbell,
-      emoji: "WorkoutCoolHappy.png",
+      emoji: "fittrackHappy.png",
       description: t("bottom_navigation.workouts_tooltip"),
       isActive: pathname === paths.root || pathname === `/${locale}`,
     },
@@ -34,7 +34,7 @@ export function BottomNavigation() {
       href: `${paths.programs}`,
       // tiles icon
       icon: Grid,
-      emoji: "WorkoutCoolSwag.png",
+      emoji: "fittrackSwag.png",
       description: t("bottom_navigation.programs_tooltip"),
       isActive: pathname.includes(paths.programs),
     },
@@ -68,17 +68,17 @@ export function BottomNavigation() {
         description: t("bottom_navigation.tools_tooltip"),
         isActive: pathname.includes("/tools"),
     },
-    {
-      id: "premium",
-      label: t("bottom_navigation.premium"),
-      shortLabel: t("bottom_navigation.premium"),
-      mobileLabel: t("bottom_navigation.premium"),
-      href: `/${locale}/premium`,
-      icon: Crown,
-      emoji: "WorkoutCoolRich.png",
-      description: t("bottom_navigation.premium_tooltip"),
-      isActive: pathname.includes("/premium"),
-    },
+    // {
+    //   id: "premium",
+    //   label: t("bottom_navigation.premium"),
+    //   shortLabel: t("bottom_navigation.premium"),
+    //   mobileLabel: t("bottom_navigation.premium"),
+    //   href: `/${locale}/premium`,
+    //   icon: Crown,
+    //   emoji: "fittrackRich.png",
+    //   description: t("bottom_navigation.premium_tooltip"),
+    //   isActive: pathname.includes("/premium"),
+    // },
   ];
 
   return (
