@@ -1,12 +1,12 @@
 # FitTrack - AI-Powered Fitness Coaching Platform
 
-![FitTrack Banner](https://via.placeholder.com/1200x300/4ECDC4/FFFFFF?text=FitTrack+-+Your+AI+Fitness+Coach)
+![FitTrack Banner]()
 
 ## 🏋️ Project Overview
 
 FitTrack is a full-stack web application that democratizes access to personalized fitness coaching through AI-powered features. Built as my internship project, it combines modern web technologies with machine learning to provide intelligent workout planning, real-time form correction, and predictive progress analytics.
 
-**Live Demo:** [https://fittrack.vercel.app](https://fittrack.vercel.app)
+**Live Demo:** [https://fittrackthing.vercel.app](https://fittrackthing.vercel.app)
 
 ## ✨ Key Features
 
